@@ -9,6 +9,6 @@ type NewComponentType = {
 
 export const NewComponent = (props: NewComponentType) => {
     return (
-        <div>asd</div>
+        <div>asdasasdasasdasdasdaasdasdasdasdasddasdasdasdad</div>
     );
 }
