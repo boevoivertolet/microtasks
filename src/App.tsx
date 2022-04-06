@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import {NewComponent} from "./components/NewComponent";
+import {TopCars} from "./components/TopCars";
+/*import {NewComponent} from "./components/NewComponent";*/
 
 
 function App() {
-    let [students, setStudents] = useState([
+    /*let [students, setStudents] = useState([
             {id: 1, name: 'James1 ', age: 81},
             {id: 2, name: 'James2 ', age: 82},
             {id: 3, name: 'James3 ', age: 83},
@@ -18,10 +19,24 @@ function App() {
             {id: 11, name: 'James11 ', age: 880},
         ]
     )
+*/
+    const [topCars, setCars] = useState([
+        {manufacturer:'BMW', model:'m5cs'},
+        {manufacturer:'Mercedes', model:'e63s'},
+        {manufacturer:'Audi', model:'rs6'}
+    ]);
+
+
+
+   
 
     return (
+        
+        <TopCars models={topCars}/>
 
-        <NewComponent students={students}/>
+      /*  <NewComponent students={students}/>*/
+
+
 
     );
 
