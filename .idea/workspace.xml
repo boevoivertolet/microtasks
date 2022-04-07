@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="" />
+    <list default="true" id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="E:\Code\microtasks\01-method-map\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="E:\Code\microtasks\void-spa\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,6 +59,8 @@
       <workItem from="1649323675287" duration="9217000" />
       <workItem from="1649333361097" duration="4000" />
       <workItem from="1649333503134" duration="105000" />
+      <workItem from="1649333993748" duration="330000" />
+      <workItem from="1649335217942" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="delete components. training buttons">
       <created>1649329008589</created>
@@ -86,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649331975886</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create universal button">
+      <created>1649334191281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649334191281</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
