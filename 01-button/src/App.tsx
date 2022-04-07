@@ -1,41 +1,41 @@
-import React, {useState} from 'react';
+import React, {MouseEvent} from 'react';
 import './App.css';
-import {TopCars} from "./components/TopCars";
-
-/*import {NewComponent} from "./components/NewComponent";*/
 
 
 function App() {
-    /*let [students, setStudents] = useState([
-            {id: 1, name: 'James1 ', age: 81},
-            {id: 2, name: 'James2 ', age: 82},
-            {id: 3, name: 'James3 ', age: 83},
-            {id: 4, name: 'James4 ', age: 84},
-            {id: 5, name: 'James5 ', age: 85},
-            {id: 6, name: 'James6 ', age: 86},
-            {id: 7, name: 'James7 ', age: 87},
-            {id: 8, name: 'James8 ', age: 88},
-            {id: 9, name: 'James9 ', age: 89},
-            {id: 10, name: 'James10 ', age: 80},
-            {id: 11, name: 'James11 ', age: 880},
-        ]
-    )
-*/
-    const [topCars, setCars] = useState([
-        {manufacturer: 'BMW', model: 'm5cs'},
-        {manufacturer: 'Mercedes', model: 'e63s'},
-        {manufacturer: 'Audi', model: 'rs6'}
-    ]);
+    /*const myFirstSub =(event: MouseEvent<HTMLButtonElement>) => {
+        console.log('Hello! i am Vasya')
+    }
+    const mySecondSub =(event: MouseEvent<HTMLButtonElement>)=> {
+        console.log('Hello! i am  Ivan')
+    }*/
 
+     const onCliCkHandler =(name: string)=>{
+         console.log(name)
+     }
+
+/*    const foo1 = () => {
+        console.log('100200')
+// Ничего не передавать, но в консоли должно показаться 100200
+    }
+
+    const foo2 = (num: number) => {
+        console.log(num)
+        // передать 100200
+    }*/
 
     return (
+        <div className='App'>
+             {/*  <button onClick={(event) =>{console.log('Hello!')}}>Say Hello 1</button>*/}
+            <button onClick={(event)=>onCliCkHandler('Vasya')}>MyYouTubeChanel-1</button>
+            <button onClick={(event)=>onCliCkHandler( 'Ivan')}>MyYouTubeChanel-2</button>
+           {/* <button onClick={() =>onCliCkHandler( 'Ivan')}>MyYouTubeChanel-2</button>*/}
 
-        <TopCars models={topCars}/>
+         {/*   <button onClick={foo1}>1</button>
+            <button onClick={() => foo2(100200)}>2</button>*/}
+        </div>
 
-        /*  <NewComponent students={students}/>*/
-
-
-    );
+    )
 
 }
 
