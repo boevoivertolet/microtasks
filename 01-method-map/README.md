@@ -1,1 +1,1 @@
-Тут будут микротаски.
+method map lesson
