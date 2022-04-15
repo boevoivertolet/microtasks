@@ -5,48 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/01-filter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/App.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/components/NewComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/serviceWorker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/src/setupTests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-filter/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/components/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/components/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/serviceWorker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/src/setupTests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-input/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/void-spa/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/void-spa/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-filter/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/01-filter/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-filter/src/components/NewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/01-filter/src/components/NewComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="E:\Code\microtasks\01-method-map\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="E:\Code\microtasks\01-button\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -123,7 +84,8 @@
       <workItem from="1649781072410" duration="1895000" />
       <workItem from="1649841539398" duration="7000" />
       <workItem from="1649855826551" duration="616000" />
-      <workItem from="1649857164821" duration="12299000" />
+      <workItem from="1649857164821" duration="12641000" />
+      <workItem from="1650035264928" duration="5804000" />
     </task>
     <task id="LOCAL-00001" summary="delete components. training buttons">
       <created>1649329008589</created>
@@ -167,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649336318867</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactoring code. create button &amp; input">
+      <created>1649870030945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649870030945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,17 +158,7 @@
     <MESSAGE value="create basis for Button" />
     <MESSAGE value="create universal button" />
     <MESSAGE value="use state lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="use state lesson" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/01-filter/src/App.tsx</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactoring code. create button &amp; input" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring code. create button &amp; input" />
   </component>
 </project>

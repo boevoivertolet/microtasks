@@ -1,13 +1,17 @@
 import React from 'react';
+import {FilterType} from '../App';
 
 export type MoneyType = {
     banknotes: string
     value: number
-    number: number
+    number: string
+
+
 }
 
 export type NewComponentType = {
     money: MoneyType[]
+    onClickFilterHandler: (nameButton: FilterType) => void
 }
 
 
@@ -16,7 +20,7 @@ export const NewComponent = (props: NewComponentType) => {
         <>
 
             <ul>
-                {currentMoney.map((objFromMoneyArr, index) => {
+                {props.money.map((objFromMoneyArr, index) => {
                     return (
                         <li key={index}>
                             <span> {objFromMoneyArr.banknotes}</span>
@@ -27,9 +31,9 @@ export const NewComponent = (props: NewComponentType) => {
                 })}
             </ul>
             <div style={{marginLeft: '35px'}}>
-                <button onClick={() => onClickFilterHandler('all')}>all</button>
-                <button onClick={() => onClickFilterHandler('rubles')}>rubles</button>
-                <button onClick={() => onClickFilterHandler('dollars')}>dollars</button>
+                <button onClick={() => props.onClickFilterHandler('all')}>all</button>
+                <button onClick={() => props.onClickFilterHandler('rubles')}>rubles</button>
+                <button onClick={() => props.onClickFilterHandler('dollars')}>dollars</button>
             </div>
         </>
 

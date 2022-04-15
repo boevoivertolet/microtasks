@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
 import {NewComponent} from "./components/NewComponent";
-import {MoneyType} from './components/NewComponent';
-import {NewComponentType} from './components/NewComponent';
 
 
 
-type FilterType='all'| 'dollars'|'rubles'
+
+export type FilterType='all'| 'dollars'|'rubles'
 
 function App() {
    /* const [money, setMoney] = useState([
@@ -46,6 +45,8 @@ function App() {
     return (
         <>
             <NewComponent
+              onClickFilterHandler={onClickFilterHandler}
+              money={currentMoney}
             />
 
            {/* <ul>
