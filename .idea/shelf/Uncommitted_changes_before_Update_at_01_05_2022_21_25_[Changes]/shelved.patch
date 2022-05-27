@@ -1,0 +1,320 @@
+Index: 02-input/src/App.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, {useState} from 'react';\r\nimport './App.css';\r\nimport {Button} from './components/Button';\r\nimport {Input} from './components/Input';\r\n\r\n\r\nfunction App() {\r\n    const [message, setMessage] = useState([\r\n            {message: 'message1'},\r\n            {message: 'message2'},\r\n            {message: 'message3'},\r\n            {message: 'message4'},\r\n            {message: 'message5'}\r\n        ]\r\n    )\r\n    let [title, setTitle] = useState('')\r\n    console.log(title)\r\n\r\n\r\n    const addMessage = (title: string) => { // Функция добавления сообщения\r\n        let newMessage = {message: title}\r\n        setMessage([newMessage, ...message])\r\n    }\r\n\r\n\r\n    const callBackButtonHandler = () => {\r\n        addMessage(title)\r\n        setTitle('')\r\n    }\r\n\r\n    return (\r\n        <div className={'App'}>\r\n            <Input setTitle={setTitle} title={title}/>\r\n            <Button name={'+'} callBack={callBackButtonHandler}/>\r\n            {/*<FullInput addMessage={addMessage}/>*/}\r\n            {/*<div>\r\n                <input/>\r\n                <button>+</button>\r\n            </div>*/}\r\n            {message.map((el, index) => {\r\n                return (\r\n                    <div key={index}>{el.message}</div>\r\n                )\r\n            })}\r\n        </div>\r\n\r\n    )\r\n\r\n}\r\n\r\nexport default App;\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02-input/src/App.tsx b/02-input/src/App.tsx
+--- a/02-input/src/App.tsx	(revision 8c52eb16efb04e9c6faddf32cc5e6b36662d849e)
++++ b/02-input/src/App.tsx	(date 1651428074653)
+@@ -31,6 +31,7 @@
+     return (
+         <div className={'App'}>
+             <Input setTitle={setTitle} title={title}/>
++            <div></div>
+             <Button name={'+'} callBack={callBackButtonHandler}/>
+             {/*<FullInput addMessage={addMessage}/>*/}
+             {/*<div>
+Index: .idea/microtasks.iml
+===================================================================
+diff --git a/.idea/microtasks.iml b/.idea/microtasks.iml
+deleted file mode 100644
+--- a/.idea/microtasks.iml	(revision 8c52eb16efb04e9c6faddf32cc5e6b36662d849e)
++++ /dev/null	(revision 8c52eb16efb04e9c6faddf32cc5e6b36662d849e)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/temp" />
+-      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+-      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4a720c92-6c58-4465-8de2-a6263194130b\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"TypeScript JSX File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"27SomTD3O5I63giavmiaZJFUTbM\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollFromSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"E:/Code/microtasks\",\r\n    \"ts.external.directory.path\": \"E:\\\\Code\\\\microtasks\\\\02-input\\\\node_modules\\\\typescript\\\\lib\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\Code\\microtasks\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4a720c92-6c58-4465-8de2-a6263194130b\" name=\"Changes\" comment=\"\" />\r\n      <created>1649323007784</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1649323007784</updated>\r\n      <workItem from=\"1649323008864\" duration=\"369000\" />\r\n      <workItem from=\"1649323675287\" duration=\"9217000\" />\r\n      <workItem from=\"1649333361097\" duration=\"4000\" />\r\n      <workItem from=\"1649333503134\" duration=\"105000\" />\r\n      <workItem from=\"1649333993748\" duration=\"330000\" />\r\n      <workItem from=\"1649335217942\" duration=\"12670000\" />\r\n      <workItem from=\"1649411286466\" duration=\"3053000\" />\r\n      <workItem from=\"1649414445761\" duration=\"1244000\" />\r\n      <workItem from=\"1649415929346\" duration=\"112000\" />\r\n      <workItem from=\"1649416073166\" duration=\"654000\" />\r\n      <workItem from=\"1649416753022\" duration=\"888000\" />\r\n      <workItem from=\"1649417784790\" duration=\"5028000\" />\r\n      <workItem from=\"1649504764822\" duration=\"6000\" />\r\n      <workItem from=\"1649595380658\" duration=\"975000\" />\r\n      <workItem from=\"1649596381027\" duration=\"9000\" />\r\n      <workItem from=\"1649781072410\" duration=\"1895000\" />\r\n      <workItem from=\"1649841539398\" duration=\"7000\" />\r\n      <workItem from=\"1649855826551\" duration=\"616000\" />\r\n      <workItem from=\"1649857164821\" duration=\"12641000\" />\r\n      <workItem from=\"1650035264928\" duration=\"6503000\" />\r\n      <workItem from=\"1650443015810\" duration=\"779000\" />\r\n      <workItem from=\"1651427197281\" duration=\"43000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"delete components. training buttons\">\r\n      <created>1649329008589</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649329008590</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"create basis for Button\">\r\n      <created>1649330174169</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649330174169</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"create basis for Button\">\r\n      <created>1649330665591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649330665591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"create universal button\">\r\n      <created>1649331975886</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649331975886</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"create universal button\">\r\n      <created>1649334191281</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649334191281</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"use state lesson\">\r\n      <created>1649336318867</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649336318867</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"refactoring code. create button &amp; input\">\r\n      <created>1649870030945</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1649870030945</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"refactoring code. create button &amp; input completed\">\r\n      <created>1650041423877</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1650041423877</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n    <option name=\"exactExcludedFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/index.d.js\" />\r\n        <option value=\"$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js\" />\r\n        <option value=\"$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js\" />\r\n        <option value=\"$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/index.d.js\" />\r\n        <option value=\"$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js\" />\r\n        <option value=\"$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"delete components. training buttons\" />\r\n    <MESSAGE value=\"create basis for Button\" />\r\n    <MESSAGE value=\"create universal button\" />\r\n    <MESSAGE value=\"use state lesson\" />\r\n    <MESSAGE value=\"refactoring code. create button &amp; input\" />\r\n    <MESSAGE value=\"refactoring code. create button &amp; input completed\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"refactoring code. create button &amp; input completed\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8c52eb16efb04e9c6faddf32cc5e6b36662d849e)
++++ b/.idea/workspace.xml	(date 1651429311985)
+@@ -4,164 +4,61 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++    <list default="true" id="1de3bd09-7e8b-4ca2-b9d9-af5e895cb3fb" name="Changes" comment="test">
++      <change afterPath="$PROJECT_DIR$/02-input/package.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/02-input/tsconfig.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/microtasks.iml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/02-input/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/02-input/src/App.tsx" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="TypeScript JSX File" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+-  </component>
+-  <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="CurrentFile" />
+-  </component>
+-  <component name="ProjectId" id="27SomTD3O5I63giavmiaZJFUTbM" />
++  <component name="ProjectId" id="28ZfJrBgusJorC7VWBnmMV5QmZO" />
+   <component name="ProjectLevelVcsManager">
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+     <option name="autoscrollFromSource" value="true" />
++    <option name="autoscrollToSource" value="true" />
+     <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showExcludedFiles" value="false" />
+     <option name="showLibraryContents" value="true" />
++    <option name="showMembers" value="true" />
++    <option name="sortByType" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
+     "last_opened_file_path": "E:/Code/microtasks",
+-    "ts.external.directory.path": "E:\\Code\\microtasks\\02-input\\node_modules\\typescript\\lib",
++    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="E:\Code\microtasks" />
+-    </key>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="" />
+-      <created>1649323007784</created>
++      <changelist id="1de3bd09-7e8b-4ca2-b9d9-af5e895cb3fb" name="Changes" comment="test" />
++      <created>1651428964263</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+-      <updated>1649323007784</updated>
+-      <workItem from="1649323008864" duration="369000" />
+-      <workItem from="1649323675287" duration="9217000" />
+-      <workItem from="1649333361097" duration="4000" />
+-      <workItem from="1649333503134" duration="105000" />
+-      <workItem from="1649333993748" duration="330000" />
+-      <workItem from="1649335217942" duration="12670000" />
+-      <workItem from="1649411286466" duration="3053000" />
+-      <workItem from="1649414445761" duration="1244000" />
+-      <workItem from="1649415929346" duration="112000" />
+-      <workItem from="1649416073166" duration="654000" />
+-      <workItem from="1649416753022" duration="888000" />
+-      <workItem from="1649417784790" duration="5028000" />
+-      <workItem from="1649504764822" duration="6000" />
+-      <workItem from="1649595380658" duration="975000" />
+-      <workItem from="1649596381027" duration="9000" />
+-      <workItem from="1649781072410" duration="1895000" />
+-      <workItem from="1649841539398" duration="7000" />
+-      <workItem from="1649855826551" duration="616000" />
+-      <workItem from="1649857164821" duration="12641000" />
+-      <workItem from="1650035264928" duration="6503000" />
+-      <workItem from="1650443015810" duration="779000" />
+-      <workItem from="1651427197281" duration="43000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="delete components. training buttons">
+-      <created>1649329008589</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649329008590</updated>
+-    </task>
+-    <task id="LOCAL-00002" summary="create basis for Button">
+-      <created>1649330174169</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649330174169</updated>
++      <updated>1651428964263</updated>
++      <workItem from="1651428965409" duration="38000" />
++      <workItem from="1651429007442" duration="41000" />
++      <workItem from="1651429210140" duration="12000" />
++      <workItem from="1651429223755" duration="32000" />
++      <workItem from="1651429280648" duration="31000" />
+     </task>
+-    <task id="LOCAL-00003" summary="create basis for Button">
+-      <created>1649330665591</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649330665591</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="create universal button">
+-      <created>1649331975886</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649331975886</updated>
+-    </task>
+-    <task id="LOCAL-00005" summary="create universal button">
+-      <created>1649334191281</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649334191281</updated>
+-    </task>
+-    <task id="LOCAL-00006" summary="use state lesson">
+-      <created>1649336318867</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649336318867</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary="refactoring code. create button &amp; input">
+-      <created>1649870030945</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1649870030945</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary="refactoring code. create button &amp; input completed">
+-      <created>1650041423877</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1650041423877</updated>
+-    </task>
+-    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+-    <option name="exactExcludedFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/index.d.js" />
+-        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+-        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+-        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/index.d.js" />
+-        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+-        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+-    <MESSAGE value="delete components. training buttons" />
+-    <MESSAGE value="create basis for Button" />
+-    <MESSAGE value="create universal button" />
+-    <MESSAGE value="use state lesson" />
+-    <MESSAGE value="refactoring code. create button &amp; input" />
+-    <MESSAGE value="refactoring code. create button &amp; input completed" />
+-    <option name="LAST_COMMIT_MESSAGE" value="refactoring code. create button &amp; input completed" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: 02-input/tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02-input/tsconfig.json b/02-input/tsconfig.json
+new file mode 100644
+--- /dev/null	(date 1649252999837)
++++ b/02-input/tsconfig.json	(date 1649252999837)
+@@ -0,0 +1,25 @@
++{
++  "compilerOptions": {
++    "target": "es5",
++    "lib": [
++      "dom",
++      "dom.iterable",
++      "esnext"
++    ],
++    "allowJs": true,
++    "skipLibCheck": true,
++    "esModuleInterop": true,
++    "allowSyntheticDefaultImports": true,
++    "strict": true,
++    "forceConsistentCasingInFileNames": true,
++    "module": "esnext",
++    "moduleResolution": "node",
++    "resolveJsonModule": true,
++    "isolatedModules": true,
++    "noEmit": true,
++    "jsx": "react"
++  },
++  "include": [
++    "src"
++  ]
++}
+Index: 02-input/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02-input/package.json b/02-input/package.json
+new file mode 100644
+--- /dev/null	(date 1649252999831)
++++ b/02-input/package.json	(date 1649252999831)
+@@ -0,0 +1,40 @@
++{
++  "name": "it-incubator-todolist-ts",
++  "version": "0.1.0",
++  "private": true,
++  "dependencies": {
++    "@testing-library/jest-dom": "^4.2.4",
++    "@testing-library/react": "^9.3.2",
++    "@testing-library/user-event": "^7.1.2",
++    "@types/jest": "^24.0.0",
++    "@types/node": "^12.0.0",
++    "@types/react": "^16.9.0",
++    "@types/react-dom": "^16.9.0",
++    "react": "^16.13.1",
++    "react-dom": "^16.13.1",
++    "react-scripts": "3.4.1",
++    "typescript": "~3.7.2",
++    "yarn": "^1.22.18"
++  },
++  "scripts": {
++    "start": "react-scripts start",
++    "build": "react-scripts build",
++    "test": "react-scripts test",
++    "eject": "react-scripts eject"
++  },
++  "eslintConfig": {
++    "extends": "react-app"
++  },
++  "browserslist": {
++    "production": [
++      ">0.2%",
++      "not dead",
++      "not op_mini all"
++    ],
++    "development": [
++      "last 1 chrome version",
++      "last 1 firefox version",
++      "last 1 safari version"
++    ]
++  }
++}

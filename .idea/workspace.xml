@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/07-microtasks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/serviceWorker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-microtasks/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="27SomTD3O5I63giavmiaZJFUTbM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Code/microtasks&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Code\\microtasks\\01-useState\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\microtasks" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a720c92-6c58-4465-8de2-a6263194130b" name="Changes" comment="" />
+      <created>1649323007784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649323007784</updated>
+      <workItem from="1649323008864" duration="369000" />
+      <workItem from="1649323675287" duration="9217000" />
+      <workItem from="1649333361097" duration="4000" />
+      <workItem from="1649333503134" duration="105000" />
+      <workItem from="1649333993748" duration="330000" />
+      <workItem from="1649335217942" duration="12670000" />
+      <workItem from="1649411286466" duration="3053000" />
+      <workItem from="1649414445761" duration="1244000" />
+      <workItem from="1649415929346" duration="112000" />
+      <workItem from="1649416073166" duration="654000" />
+      <workItem from="1649416753022" duration="888000" />
+      <workItem from="1649417784790" duration="5028000" />
+      <workItem from="1649504764822" duration="6000" />
+      <workItem from="1649595380658" duration="975000" />
+      <workItem from="1649596381027" duration="9000" />
+      <workItem from="1649781072410" duration="1895000" />
+      <workItem from="1649841539398" duration="7000" />
+      <workItem from="1649855826551" duration="616000" />
+      <workItem from="1649857164821" duration="12641000" />
+      <workItem from="1650035264928" duration="6503000" />
+      <workItem from="1650443015810" duration="779000" />
+      <workItem from="1651427197281" duration="43000" />
+      <workItem from="1651429654326" duration="439000" />
+      <workItem from="1651430194912" duration="1982000" />
+      <workItem from="1651492669859" duration="39000" />
+      <workItem from="1653649492467" duration="401000" />
+      <workItem from="1653649911055" duration="11000" />
+    </task>
+    <task id="LOCAL-00001" summary="delete components. training buttons">
+      <created>1649329008589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649329008590</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create basis for Button">
+      <created>1649330174169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649330174169</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create basis for Button">
+      <created>1649330665591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649330665591</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create universal button">
+      <created>1649331975886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649331975886</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create universal button">
+      <created>1649334191281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649334191281</updated>
+    </task>
+    <task id="LOCAL-00006" summary="use state lesson">
+      <created>1649336318867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649336318867</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactoring code. create button &amp; input">
+      <created>1649870030945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649870030945</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactoring code. create button &amp; input completed">
+      <created>1650041423877</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650041423877</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactoring code. create button &amp; input completed">
+      <created>1651429800589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651429800589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test commit">
+      <created>1651432369519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651432369519</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/01-filter/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/02-input/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete components. training buttons" />
+    <MESSAGE value="create basis for Button" />
+    <MESSAGE value="create universal button" />
+    <MESSAGE value="use state lesson" />
+    <MESSAGE value="refactoring code. create button &amp; input" />
+    <MESSAGE value="refactoring code. create button &amp; input completed" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+  </component>
+</project>
