@@ -1,0 +1,1 @@
+clean SPA for microtasks
